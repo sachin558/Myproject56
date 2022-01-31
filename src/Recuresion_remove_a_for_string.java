@@ -7,7 +7,7 @@ public class Recuresion_remove_a_for_string {
             return str;
         }
         String ans=" ";
-        if(str.charAt(0)=='a'){
+        if(str.charAt(0)!='a'){
             ans=ans+str.charAt(0);
         }
         System.out.print(ans);

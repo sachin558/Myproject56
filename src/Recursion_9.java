@@ -23,7 +23,7 @@ public class Recursion_9 {
 
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
-        int arr[]={9,9,8}
+        int arr[]={9,9,8};
         System.out.println(Example_1(arr,arr.length));
     }
 }
