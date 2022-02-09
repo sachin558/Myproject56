@@ -1,26 +1,27 @@
 import java.util.Scanner;
 
-/*
-write the program take the input from the user in the form of string find the given string is the palindrome or not
- */
 public class Solution {
-    String str;
-    String str1="";
-    Solution(){
-        Scanner sc=new Scanner(System.in);
-        System.out.println("enter the string ");
-        str=sc.nextLine();
-        for (int i = str.length()-1; i >=0 ; i--) {
-            str1=str1+str.charAt(i);
+    static boolean isAnagram(String a, String b) {
+        // Complete the function
+        for (int i = 0; i < a.length(); i++) {
+            a.charAt(i);
         }
-        if(str.equals(str1)){
-            System.out.println("Yes " +str1);
+        for (int i = 0; i < b.length(); i++) {
+            b.charAt(i);
+        }if(a.length()==b.length()){
+            return true;
         }else {
-            System.out.println("not "+str1);
+            return false;
         }
     }
-
     public static void main(String[] args) {
-        Solution obj=new Solution();
+
+        Scanner scan = new Scanner(System.in);
+        String a = scan.next();
+        String b = scan.next();
+        scan.close();
+        boolean ret = isAnagram(a, b);
+        System.out.println( (ret) ? "Anagrams" : "Not Anagrams" );
     }
 }
+
